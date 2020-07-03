@@ -29,7 +29,7 @@ const createWindow = () => {
   setInterval(()=>{
     os.cpuUsage(function(v){
     mainWindow.webContents.send('CPU', v*100);
-    mainWindow.webContents.send('Memory', os.freememPercentage*100);
+    mainWindow.webContents.send('Memory', os.freememPercentage()*100);
     mainWindow.webContents.send('Total-memory', os.totalmem()/1024)
     }
     )} 
