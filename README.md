@@ -15,3 +15,4 @@ Once the App is ready we need to package it and create an installer. Below is th
 
 npm run make
 
+![Screenshot_CPU Monitor](https://user-images.githubusercontent.com/46997364/86445049-58d9c200-bd2f-11ea-9d30-cd7997763985.PNG)
