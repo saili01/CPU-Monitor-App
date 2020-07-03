@@ -9,7 +9,7 @@
     
     <div class="box">
       <span class="label">CPU Usuage(%)</span>
-      <span id="cpu">-</span>
+      <span id="CPU">-</span>
     </div>
     <div class="box">
       <span class="label">Free Memory(%)</span>
@@ -23,9 +23,9 @@
     <script>
       const electron=require('electron');
       const ipcRenderer=electron.ipcRenderer();
-      ipcRenderer.on('cpu',(event,data)=>{
-        console.log('cpu % : '+data);
-        document.getElementById('cpu').innerHTML=data.toFixed(2);
+      ipcRenderer.on('CPU',(event,data)=>{
+        //console.log('CPU % : '+data);
+        document.getElementById('CPU').innerHTML=data.toFixed(2);
       });
       ipcRenderer.on('Memory',(event,data)=>{
         console.log('Memory % : '+data)
